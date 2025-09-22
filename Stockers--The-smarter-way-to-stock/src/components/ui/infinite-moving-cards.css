@@ -1,0 +1,22 @@
+.legend-moving-cards {
+  --animation-duration: 200s !important;
+  --animation-timing-function: linear;
+}
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) var(--animation-timing-function, linear) infinite var(--animation-direction, forwards);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroller {
+  --animation-duration: 40s;
+  --animation-direction: forwards;
+  --animation-timing-function: linear;
+}
